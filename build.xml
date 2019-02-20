@@ -19,10 +19,12 @@
         </target>
         
 <path id="NecessaryLibraries">
-        <pathelement location="./usedLibraries/junit-4.12.jar"/>
+        
         <!--matcher-->
-        <pathelement location="./usedLibraries/hamcrest-core.jar"/>
+        <pathelement location="/Users/macbookpro/eclipse-workspace/HW1-SoftwareEngineering/src/usedLibraries/*.jar"/>
         <!--<pathelement location="./UsedLibraries/jacocoant.jar"/>-->
+       
+        
     </path>
     
         
