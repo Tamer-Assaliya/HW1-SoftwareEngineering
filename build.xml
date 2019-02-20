@@ -19,9 +19,9 @@
         </target>
         
 <path id="NecessaryLibraries">
-        <pathelement location="./usedLibraries/junit-4.13-beta-2.jar"/>
+        <pathelement location="./usedLibraries/junit-4.12.jar"/>
         <!--matcher-->
-        <pathelement location="./usedLibraries/hamcrest-core-2.1.jar"/>
+        <pathelement location="./usedLibraries/hamcrest-core.jar"/>
         <!--<pathelement location="./UsedLibraries/jacocoant.jar"/>-->
     </path>
     
@@ -48,7 +48,7 @@
             <formatter type="brief" usefile="false"/>
             <batchtest >
                 <fileset dir="${result.testclasses.dir}" >
-                  <!-- <include name="**/*Test.class"/> -->   
+                  <include name="**/*Test.class"/>   
                 </fileset>
             </batchtest>
             
