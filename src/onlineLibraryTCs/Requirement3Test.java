@@ -1,3 +1,4 @@
+package onlineLibraryTCs;
 
 
 import static org.junit.Assert.*;
@@ -24,5 +25,4 @@ public class Requirement3Test {
 			assertTrue( BooksPrices[i]==books.get(i).bookPrice);
 		}
 		assertTrue(shoppingcart.bookCount==2&&shoppingcart.totalValue==227);	}
-
 }

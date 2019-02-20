@@ -1,14 +1,15 @@
 <project default="compile">
 <property name ="src.java.dir" location="./src/onlineLibrary"/>
-<property name ="src.test.dir" location="./src"/>
+<property name ="src.test.dir" location="./src/onlineLibraryTCs"/>
 <property name ="result.dir" location="./target"/>
 <property name ="result.javaclasses.dir" location="${result.dir}/classes"/>
 <property name ="result.testclasses.dir" location="${result.dir}/testclasses"/>
-<property name ="result.jar.file" location="./Myproduct.jar"/>
+<property name ="result.jar.file" location="./HW1-SoftwareEngineering.jar"/>
 <target name="compile">
             <mkdir dir ="${result.javaclasses.dir}"/>
             <javac srcdir="${src.java.dir}" destdir="${result.javaclasses.dir}" debug="true" includeantruntime="false">
             </javac>
+
 </target>
 <!-- comment Make jar or executable product -->
 <target name ="jar" depends ="compile">
@@ -21,13 +22,11 @@
 <path id="NecessaryLibraries">
         
         <!--matcher-->
-        <pathelement location="/Users/macbookpro/eclipse-workspace/HW1-SoftwareEngineering/src/usedLibraries/hamcrest-core-1.3.jar"/>
-        <pathelement location="/Users/macbookpro/eclipse-workspace/HW1-SoftwareEngineering/src/usedLibraries/junit-4.12.jar"/>
+        <pathelement location="./src/usedLibraries/hamcrest-core-1.3.jar"/>
+        <pathelement location="./src/usedLibraries/junit-4.12.jar"/>
         <!--<pathelement location="./UsedLibraries/jacocoant.jar"/>-->
-       
         
     </path>
-    
         
     <target name="compile-testcases" depends="compile">
         <mkdir dir="${result.testclasses.dir}"/>
