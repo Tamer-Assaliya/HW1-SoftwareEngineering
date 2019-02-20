@@ -1,4 +1,4 @@
-package onlineLibrary;
+
 
 import static org.junit.Assert.*;
 
@@ -6,6 +6,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.junit.Test;
+
+import onlineLibrary.Book;
+import onlineLibrary.OnlineLibrary;
+import onlineLibrary.ShoppingCart;
 
 public class Requirement3Test {
 

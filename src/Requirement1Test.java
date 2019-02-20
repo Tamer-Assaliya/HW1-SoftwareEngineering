@@ -1,8 +1,11 @@
-package onlineLibrary;
+
 
 import static org.junit.Assert.*;
 
 import org.junit.Test;
+
+import onlineLibrary.OnlineLibrary;
+import onlineLibrary.ShoppingCart;
 
 public class Requirement1Test {
 
